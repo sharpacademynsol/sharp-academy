@@ -1,0 +1,25 @@
+{
+  "name": "sharp-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --persist-to=../.wrangler/state",
+    "build:css": "node build-css.mjs",
+    "build": "npm run build:css && tsc --noEmit",
+    "deploy": "npm run build:css && wrangler deploy"
+  },
+  "dependencies": {
+    "hono": "^4.7.2",
+    "katex": "^0.19.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260413.1 || ^5.0.0",
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/node": "^4.3.3",
+    "@tailwindcss/oxide": "^4.3.3",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "wrangler": "^4.82.1"
+  }
+}

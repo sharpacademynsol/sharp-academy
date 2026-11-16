@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+/* Noto Naskh Arabic Local & Webfont Definition */
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  src: local('Noto Naskh Arabic'),
+       local('NotoNaskhArabic'),
+       local('Noto Naskh Arabic Regular'),
+       url('/fonts/NotoNaskhArabic-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Naskh Arabic';
+  src: local('Noto Naskh Arabic Bold'),
+       local('NotoNaskhArabic-Bold'),
+       url('/fonts/NotoNaskhArabic-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Jameel Noori Nastaleeq Urdu Web & Desktop Font Definition */
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq';
+  src: local('Jameel Noori Nastaleeq'),
+       local('Jameel Noori Nastaleeq Regular'),
+       local('JameelNooriNastaleeq'),
+       url('/fonts/jameel-noori-nastaleeq.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/npm/jameel-noori/fonts/jameel-noori-nastaleeq4.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq Kasheeda';
+  src: local('Jameel Noori Nastaleeq Kasheeda'),
+       local('JameelNooriNastaleeqKasheeda'),
+       local('Jameel Noori Nastaleeq');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-urdu: 'Jameel Noori Nastaleeq', 'JameelNooriNastaleeq', 'Noto Nastaliq Urdu', 'Urdu Typesetting', serif;
+  --font-arabic: 'Noto Naskh Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Urdu & Arabic Typography */
+.font-urdu {
+  font-family: var(--font-urdu) !important;
+  line-height: 2.2 !important;
+  word-spacing: 2px;
+}
+
+.font-arabic {
+  font-family: 'Noto Naskh Arabic', 'Segoe UI', Tahoma, Arial, sans-serif !important;
+  line-height: 1.8 !important;
+  letter-spacing: 0;
+}
+
+.font-arabic-calligraphic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  line-height: 2 !important;
+}
+
+.font-arabic-modern {
+  font-family: 'Cairo', 'Noto Sans Arabic', sans-serif;
+  line-height: 1.7 !important;
+}
+
+/* BiDi and RTL text management */
+[dir="rtl"], .rtl-mode {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="auto"] {
+  unicode-bidi: plaintext;
+}
+
+/* Isolate KaTeX mathematical formulas strictly in LTR when nested inside RTL text */
+[dir="rtl"] .katex, 
+[dir="rtl"] .render-math-target .katex,
+.rtl-mode .katex {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block;
+  text-align: left;
+}
+
+
+/* Custom sleek scrollbar for Formula Studio and compact windows */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ==========================================================================
+   HIGH-PRECISION PRINT MEDIA ENGINE (A4 Exam Booklets & OMR Sheets)
+   ========================================================================== */
+@page {
+  size: A4 portrait;
+  margin: 10mm 12mm;
+}
+
+@media print {
+  /* Hide all non-printable chrome */
+  aside,
+  header,
+  nav,
+  button,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Reset document root to clean, pure white background */
+  html,
+  body {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    font-size: 11pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Force main element to fill full page without layout paddings */
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: transparent !important;
+  }
+
+  /* Remove any nested scrollbars or scroll buttons from showing in print */
+  * {
+    overflow: visible !important;
+  }
+
+  /* Page Break Controllers */
+  .break-after-page,
+  .page-break-after {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .break-before-page,
+  .page-break-before {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .break-inside-avoid,
+  .page-break-inside-avoid {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Remove UI previews borders/shadows during print */
+  .printable-document {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+

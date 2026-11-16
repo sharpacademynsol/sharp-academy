@@ -1,0 +1,28 @@
+name = "sharp-admin"
+main = ".open-next/worker.js"
+compatibility_date = "2026-02-17"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Target Cloudflare Account: asifslk2024@gmail.com
+# Locking to specific Account ID prevents accidental deployment to dev@corelogix.dev
+account_id = "5c2cc3256370248706dbcde865e3cb6d"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sharp-db"
+# Replace with UUID generated via: wrangler d1 create sharp-db (under asifslk2024@gmail.com)
+database_id = "6aa14e2c-9ad6-48de-ba39-ce28176b77ee"
+
+[[r2_buckets]]
+binding = "FILES"
+# Replace with bucket created via: wrangler r2 bucket create sharp-materials (under asifslk2024@gmail.com)
+bucket_name = "sharp-materials"
+
+[vars]
+PUBLIC_APP_DOMAIN = "admin.sharpacademy.pk"
+NEXT_PUBLIC_PORTAL_URL = "https://sharpacademy.pk"
+CLOUDFLARE_ACCOUNT_OWNER = "asifslk2024@gmail.com"

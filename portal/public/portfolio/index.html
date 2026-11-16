@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Asif | Executive Director & Tech Strategist</title>
+    <meta name="description" content="Muhammad Asif — Executive Director at Sharp Academy, Senior SQA & Data Engineering Strategist at DevGiant. Over 20 years of orchestrating educational innovation, software architecture, and intelligent data systems.">
+    <meta name="keywords" content="Muhammad Asif, Sharp Academy, Executive Director, EdTech, DevGiant, Software Quality Assurance, Data Engineering, AI Strategist, Cloudflare Workers, Machine Learning, Leadership">
+    <meta name="author" content="Muhammad Asif">
+    
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:title" content="Muhammad Asif | Executive Director & Tech Strategist">
+    <meta property="og:description" content="Leadership in EdTech Innovation, Enterprise Software Quality, and Intelligent Data Architectures.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/profile.png">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Pro Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            /* Sleek Obsidian Dark Mode (Default Luxury Theme) */
+            --bg-base: #090d16;
+            --bg-surface: #0f172a;
+            --bg-surface-elevated: #162036;
+            --bg-glass: rgba(15, 23, 42, 0.78);
+            --bg-glass-card: rgba(22, 32, 54, 0.65);
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(99, 102, 241, 0.35);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-primary: #6366f1;
+            --accent-secondary: #38bdf8;
+            --accent-tertiary: #10b981;
+            --accent-glow: rgba(99, 102, 241, 0.25);
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #38bdf8 50%, #818cf8 100%);
+            --aurora-gradient: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, rgba(56, 189, 248, 0.05) 45%, transparent 70%);
+            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-subtle);
+            --card-shadow-hover: 0 20px 40px -15px rgba(99, 102, 241, 0.25), 0 0 0 1px var(--border-highlight);
+            --badge-bg: rgba(99, 102, 241, 0.12);
+            --badge-border: rgba(99, 102, 241, 0.3);
+            --badge-text: #a5b4fc;
+            --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        [data-theme="light"] {
+            /* High-Contrast Titanium Executive Light Theme */
+            --bg-base: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-surface-elevated: #f1f5f9;
+            --bg-glass: rgba(255, 255, 255, 0.85);
+            --bg-glass-card: rgba(255, 255, 255, 0.75);
+            --border-subtle: rgba(15, 23, 42, 0.08);
+            --border-highlight: rgba(79, 70, 229, 0.4);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --accent-primary: #4f46e5;
+            --accent-secondary: #0284c7;
+            --accent-tertiary: #059669;
+            --accent-glow: rgba(79, 70, 229, 0.15);
+            --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #0284c7 50%, #4338ca 100%);
+            --aurora-gradient: radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.08) 0%, rgba(2, 132, 199, 0.04) 50%, transparent 75%);
+            --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06), 0 0 0 1px var(--border-subtle);
+            --card-shadow-hover: 0 20px 40px -12px rgba(79, 70, 229, 0.15), 0 0 0 1px var(--border-highlight);
+            --badge-bg: rgba(79, 70, 229, 0.08);
+            --badge-border: rgba(79, 70, 229, 0.25);
+            --badge-text: #4338ca;
+        }
+
+        /* Base Resets */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            line-height: 1.65;
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+            position: relative;
+        }
+
+        /* Ambient Glow Mesh */
+        .ambient-mesh {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+            background: var(--aurora-gradient);
+            opacity: 0.85;
+            transition: opacity 0.4s ease;
+        }
+
+        .ambient-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            z-index: -2;
+            opacity: 0.18;
+            animation: orbFloat 20s infinite alternate ease-in-out;
+        }
+        .ambient-orb-1 {
+            top: 10%;
+            left: -10%;
+            width: 550px;
+            height: 550px;
+            background: #6366f1;
+        }
+        .ambient-orb-2 {
+            bottom: 15%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: #38bdf8;
+            animation-duration: 25s;
+            animation-delay: -5s;
+        }
+
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(60px, 40px) scale(1.1); }
+            100% { transform: translate(-40px, 70px) scale(0.95); }
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+        }
+
+        p {
+            color: var(--text-secondary);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+        }
+
+        /* Layout Container */
+        .container {
+            width: 100%;
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 6.5rem 0;
+            position: relative;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.95rem;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--badge-text);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 3.5vw, 2.75rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Header & Navigation */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            padding: 1.25rem 0;
+        }
+
+        .site-header.scrolled {
+            padding: 0.75rem 0;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-subtle);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .brand-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--accent-primary);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .brand-name span {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-role {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 1.75rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            position: relative;
+            padding: 0.35rem 0;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-primary);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gradient);
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .ctrl-btn {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .ctrl-btn:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .lang-btn {
+            width: auto;
+            padding: 0 0.85rem;
+            gap: 0.4rem;
+            font-weight: 700;
+            font-size: 0.82rem;
+        }
+
+        .btn-academy {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.1rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: #ffffff !important;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: var(--transition-smooth);
+        }
+
+        .btn-academy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.45);
+        }
+
+        .btn-academy img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.45rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #34d399;
+            margin-bottom: 1.75rem;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #10b981;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulseEffect 2s infinite;
+        }
+
+        @keyframes pulseEffect {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.2rem);
+            font-weight: 800;
+            line-height: 1.12;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .text-gradient {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-lead {
+            font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 2.25rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.1rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.85rem 1.85rem;
+            background: var(--accent-gradient);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.98rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            padding: 0.85rem 1.85rem;
+            background: var(--bg-surface-elevated);
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.98rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-surface);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-3px);
+            box-shadow: var(--card-shadow);
+        }
+
+        /* Metric Counters */
+        .hero-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-number {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 0.35rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .metric-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Hero Visual & Profile Showcase */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .portrait-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .portrait-frame {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.6);
+            transition: var(--transition-smooth);
+        }
+
+        .portrait-frame::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(9, 13, 22, 0.9) 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .portrait-img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .portrait-frame:hover .portrait-img {
+            transform: scale(1.03);
+        }
+
+        .portrait-info-overlay {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            z-index: 2;
+        }
+
+        .overlay-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+
+        .overlay-titles {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        /* Floating Accent Badges */
+        .float-badge {
+            position: absolute;
+            background: var(--bg-glass);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid var(--border-subtle);
+            padding: 0.75rem 1.1rem;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 3;
+            animation: floatSlow 6s infinite alternate ease-in-out;
+        }
+
+        .float-badge-1 {
+            top: 2rem;
+            left: -1.75rem;
+        }
+
+        .float-badge-2 {
+            bottom: 4rem;
+            right: -1.75rem;
+            animation-duration: 7s;
+            animation-delay: -2s;
+        }
+
+        @keyframes floatSlow {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-12px); }
+        }
+
+        .float-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: var(--accent-gradient);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .float-text-top {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .float-text-bot {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        /* Strategic Leadership Pillars Section */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .pillar-card {
+            background: var(--bg-glass-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 2.25rem 1.75rem;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: var(--border-highlight);
+        }
+
+        .pillar-card:hover::before {
+            opacity: 1;
+        }
+
+        .pillar-icon-box {
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .pillar-card:hover .pillar-icon-box {
+            background: var(--accent-gradient);
+            color: #ffffff;
+            box-shadow: 0 8px 20px var(--accent-glow);
+        }
+
+        .pillar-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.85rem;
+        }
+
+        .pillar-desc {
+            font-size: 0.92rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .pillar-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--accent-secondary);
+            font-weight: 600;
+        }
+
+        /* Executive Case Studies Section */
+        .case-studies-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            padding: 0.6rem 1.4rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent-gradient);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .case-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .case-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: var(--border-highlight);
+        }
+
+        .case-header-bar {
+            padding: 1.5rem 2rem 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .case-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 0.3rem 0.85rem;
+            border-radius: 100px;
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            border: 1px solid var(--badge-border);
+        }
+
+        .case-status {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #10b981;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .case-body {
+            padding: 1.25rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .case-title {
+            font-size: 1.45rem;
+            font-weight: 800;
+            margin-bottom: 0.85rem;
+            color: var(--text-primary);
+        }
+
+        .case-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Impact Metrics Banner */
+        .case-impact-box {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 14px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            text-align: center;
+        }
+
+        .impact-item-val {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent-secondary);
+        }
+
+        .impact-item-lbl {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .case-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 0.25rem 0.65rem;
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: var(--text-secondary);
+        }
+
+        .case-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .case-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            cursor: pointer;
+        }
+
+        .case-link-btn:hover {
+            color: var(--accent-secondary);
+            gap: 0.75rem;
+        }
+
+        /* Strategic Capabilities Section */
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+        }
+
+        .capability-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 2.25rem;
+            transition: var(--transition-smooth);
+        }
+
+        .capability-card:hover {
+            border-color: var(--border-highlight);
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        .cap-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cap-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--badge-bg);
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .cap-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .cap-skills-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cap-skill-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .cap-skill-top {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .cap-meter {
+            width: 100%;
+            height: 6px;
+            background: var(--bg-surface-elevated);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .cap-meter-fill {
+            height: 100%;
+            background: var(--accent-gradient);
+            border-radius: 10px;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Executive Career Trajectory (Timeline) */
+        .trajectory-timeline {
+            position: relative;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .trajectory-timeline::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 28px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, var(--border-subtle) 100%);
+        }
+
+        .trajectory-item {
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 3.5rem;
+        }
+
+        .trajectory-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .trajectory-node {
+            position: absolute;
+            left: 17px;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--bg-surface);
+            border: 3px solid var(--accent-primary);
+            box-shadow: 0 0 0 5px var(--badge-bg);
+            z-index: 2;
+            transition: var(--transition-smooth);
+        }
+
+        .trajectory-item:hover .trajectory-node {
+            border-color: var(--accent-secondary);
+            transform: scale(1.2);
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .trajectory-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 18px;
+            padding: 1.75rem 2rem;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition-smooth);
+        }
+
+        .trajectory-card:hover {
+            border-color: var(--border-highlight);
+            transform: translateX(6px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .trajectory-period {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            margin-bottom: 0.4rem;
+        }
+
+        .trajectory-role {
+            font-size: 1.35rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+
+        .trajectory-org {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            margin-bottom: 0.95rem;
+        }
+
+        .trajectory-desc {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 1rem;
+        }
+
+        .trajectory-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .trajectory-chip {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            background: var(--bg-surface-elevated);
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Verified Credentials & Honors */
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .cred-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 18px;
+            padding: 1.75rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .cred-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-highlight);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .cred-logo-wrapper {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--bg-surface-elevated);
+            border: 2px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cred-logo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cred-issuer {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.35rem;
+        }
+
+        .cred-name {
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.35;
+            margin-bottom: 0.75rem;
+            flex-grow: 1;
+        }
+
+        .cred-badge-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            padding: 0.4rem 0.85rem;
+            border-radius: 100px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            transition: var(--transition-smooth);
+        }
+
+        .cred-badge-btn:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        /* Executive Leadership Philosophy Banner */
+        .quote-banner {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 3.5rem 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .quote-banner::before {
+            content: '“';
+            position: absolute;
+            top: -20px;
+            right: 40px;
+            font-family: var(--font-display);
+            font-size: 12rem;
+            color: var(--accent-primary);
+            opacity: 0.08;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .quote-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+            font-weight: 600;
+            line-height: 1.45;
+            color: var(--text-primary);
+            margin-bottom: 1.75rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .author-thumb {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-primary);
+        }
+
+        .author-info h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .author-info p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        /* Advisory & Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        .contact-info-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 2.75rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .contact-info-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-desc {
+            font-size: 0.98rem;
+            line-height: 1.65;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-method-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.1rem;
+        }
+
+        .contact-icon-bubble {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            color: var(--accent-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-detail h5 {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-method-detail p, .contact-method-detail a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .contact-method-detail a:hover {
+            color: var(--accent-primary);
+        }
+
+        .social-pill-row {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .social-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.55rem 1.1rem;
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+        }
+
+        .social-pill:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+            border-color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Interactive Advisory Form */
+        .advisory-form-wrapper {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 2.75rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.85rem 1.1rem;
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+            background: var(--bg-surface);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .form-status-alert {
+            display: none;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 1.25rem;
+        }
+
+        .form-status-alert.success {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            color: #10b981;
+        }
+
+        /* Site Footer */
+        .site-footer {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            padding: 4.5rem 0 2.5rem;
+            position: relative;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.35rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 1.75rem;
+            list-style: none;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .back-to-top {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* RTL & Arabic Language Typography Overrides */
+        html[dir="rtl"] {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            text-align: right;
+        }
+
+        html[dir="rtl"] .trajectory-timeline::before {
+            left: auto;
+            right: 28px;
+        }
+
+        html[dir="rtl"] .trajectory-item {
+            padding-left: 0;
+            padding-right: 70px;
+        }
+
+        html[dir="rtl"] .trajectory-node {
+            left: auto;
+            right: 17px;
+        }
+
+        html[dir="rtl"] .float-badge-1 {
+            left: auto;
+            right: -1.75rem;
+        }
+
+        html[dir="rtl"] .float-badge-2 {
+            right: auto;
+            left: -1.75rem;
+        }
+
+        html[dir="rtl"] .trajectory-card:hover {
+            transform: translateX(-6px);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1080px) {
+            .pillars-grid, .credentials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+                text-align: center;
+            }
+            .hero-badge, .hero-actions {
+                justify-content: center;
+            }
+            .hero-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: var(--bg-surface);
+                border-bottom: 1px solid var(--border-subtle);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.25rem;
+                display: none;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .float-badge-1, .float-badge-2 {
+                display: none;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            .hero-metrics {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glow Aurora Canvas -->
+    <div class="ambient-mesh"></div>
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+
+    <!-- Site Header & Sticky Navigation -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#hero" class="brand-logo">
+                    <img src="./images/profile.png" alt="Muhammad Asif" class="brand-avatar">
+                    <div class="brand-text">
+                        <span class="brand-name">Muhammad <span>Asif</span></span>
+                        <span class="brand-role" data-en="Director & Tech Strategist" data-ar="المدير التنفيذي والمستشار التقني">Director & Tech Strategist</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link" data-en="Executive Profile" data-ar="الملف التنفيذي">Executive Profile</a></li>
+                    <li><a href="#cases" class="nav-link" data-en="Flagship Initiatives" data-ar="المبادرات والمشاريع">Flagship Initiatives</a></li>
+                    <li><a href="#capabilities" class="nav-link" data-en="Capabilities" data-ar="القدرات والخبرات">Capabilities</a></li>
+                    <li><a href="#trajectory" class="nav-link" data-en="Trajectory" data-ar="المسيرة المهنية">Trajectory</a></li>
+                    <li><a href="#credentials" class="nav-link" data-en="Accreditations" data-ar="الاعتمادات العالمية">Accreditations</a></li>
+                    <li><a href="#advisory" class="nav-link" data-en="Advisory & Contact" data-ar="الاستشارات والتواصل">Advisory & Contact</a></li>
+                </ul>
+
+                <div class="nav-controls">
+                    <!-- Sharp Academy Portal Return Link -->
+                    <a href="/" class="btn-academy" title="Go to Sharp Academy Portal" data-en="Sharp Portal" data-ar="بوابة شارب">
+                        <img src="./images/logo.png" alt="Sharp Academy" onerror="this.src='/images/logo.png'">
+                        <span data-en="Sharp Portal" data-ar="بوابة شارب">Sharp Portal</span>
+                    </a>
+
+                    <!-- Theme Toggle -->
+                    <button class="ctrl-btn" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun" id="themeIcon"></i>
+                    </button>
+
+                    <!-- Language Switcher -->
+                    <button class="ctrl-btn lang-btn" id="langToggle" title="Switch Language" aria-label="Toggle Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="langText">AR</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        <span data-en="Executive Director • Sharp Academy & SQA Lead • DevGiant" data-ar="المدير التنفيذي • أكاديمية شارب ومسؤول الجودة • ديف جاينت">Executive Director • Sharp Academy & SQA Lead • DevGiant</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-en="Architecting" data-ar="هندسة">Architecting</span> <span class="text-gradient" data-en="EdTech Innovation" data-ar="الابتكار التعليمي">EdTech Innovation</span><br>
+                        <span data-en="& Scalable Software Excellence." data-ar="والتميز البرمجي المستدام.">& Scalable Software Excellence.</span>
+                    </h1>
+
+                    <p class="hero-lead" data-en="Transforming institutional learning ecosystems, establishing high-assurance software quality pipelines, and spearheading intelligent data architectures with over two decades of technology and educational governance." data-ar="قيادة التحول في النظم التعليمية الذكية، وإرساء معايير جودة البرمجيات المتقدمة، وهندسة استراتيجيات البيانات والذكاء الاصطناعي بخبرة قيادية تتجاوز عقدين من التميز الأكاديمي والتقني.">
+                        Transforming institutional learning ecosystems, establishing high-assurance software quality pipelines, and spearheading intelligent data architectures with over two decades of technology and educational governance.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#cases" class="btn-primary">
+                            <span data-en="Explore Strategic Initiatives" data-ar="استعراض المبادرات الاستراتيجية">Explore Strategic Initiatives</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#advisory" class="btn-secondary">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span data-en="Request Consultation" data-ar="طلب استشارة استراتيجية">Request Consultation</span>
+                        </a>
+                        <a href="resume.pdf" class="btn-secondary" target="_blank" download>
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span data-en="Executive Dossier (PDF)" data-ar="الملف التعريفي (PDF)">Executive Dossier (PDF)</span>
+                        </a>
+                    </div>
+
+                    <!-- Metrics Impact Bar -->
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <span class="metric-number">20+</span>
+                            <span class="metric-label" data-en="Years Leadership" data-ar="عاماً في القيادة والتقنية">Years Leadership</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">15K+</span>
+                            <span class="metric-label" data-en="Cadets & Students" data-ar="طالب ومتدرب مؤهل">Cadets & Students</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">99.9%</span>
+                            <span class="metric-label" data-en="Platform Uptime" data-ar="جاهزية وموثوقية الأنظمة">Platform Uptime</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-number">40+</span>
+                            <span class="metric-label" data-en="Systems Modernized" data-ar="منظومة رقمية تم تطويرها">Systems Modernized</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Portrait Card -->
+                <div class="hero-visual">
+                    <div class="portrait-wrapper">
+                        <!-- Floating Glass Achievement Chips -->
+                        <div class="float-badge float-badge-1">
+                            <div class="float-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <div class="float-text-top" data-en="Institutional Role" data-ar="الدور القيادي">Institutional Role</div>
+                                <div class="float-text-bot" data-en="Executive Director" data-ar="المدير الأكاديمي والتنفيذي">Executive Director</div>
+                            </div>
+                        </div>
+
+                        <div class="float-badge float-badge-2">
+                            <div class="float-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <div class="float-text-top" data-en="Engineering Standard" data-ar="معايير الهندسة">Engineering Standard</div>
+                                <div class="float-text-bot" data-en="Enterprise SQA & Data" data-ar="الجودة والبيانات الذكية">Enterprise SQA & Data</div>
+                            </div>
+                        </div>
+
+                        <!-- Main Portrait Frame -->
+                        <div class="portrait-frame">
+                            <img src="./images/profile.png" alt="Muhammad Asif" class="portrait-img">
+                            <div class="portrait-info-overlay">
+                                <h3 class="overlay-name">Muhammad Asif</h3>
+                                <p class="overlay-titles" data-en="Director & Faculty Head • Sharp Academy" data-ar="المدير ورئيس الهيئة التعليمية • أكاديمية شارب">Director & Faculty Head • Sharp Academy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Leadership Pillars (About & Philosophy) -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Strategic Focus" data-ar="الركائز الاستراتيجية">Strategic Focus</span>
+                <h2 class="section-title" data-en="Executive Pillars of Excellence" data-ar="ركائز التميز القيادي والتقني">Executive Pillars of Excellence</h2>
+                <p class="section-subtitle" data-en="Synthesizing academic pedagogy, software assurance, and cloud intelligence to build institutional value." data-ar="دمج المنهجية الأكاديمية الصارمة مع هندسة البرمجيات المتقدمة وذكاء السحابة لبناء منظومات رائدة.">
+                    Synthesizing academic pedagogy, software assurance, and cloud intelligence to build institutional value.
+                </p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="pillar-title" data-en="EdTech Architecture" data-ar="هندسة التعليم الرقمي">EdTech Architecture</h3>
+                    <p class="pillar-desc" data-en="Directing the comprehensive digital roadmap of Sharp Academy. Architecting high-concurrency examination engines, automated student performance tracking, and multi-campus learning workflows." data-ar="توجيه استراتيجية التحول الرقمي الشامل لأكاديمية شارب، وهندسة منصات الامتحانات ذات الكثافة العالية وتتبع الأداء الأكاديمي المتطور.">
+                        Directing the comprehensive digital roadmap of Sharp Academy. Architecting high-concurrency examination engines, automated student performance tracking, and multi-campus learning workflows.
+                    </p>
+                    <span class="pillar-tag">#CloudflareEdge #DigitalLMS</span>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="pillar-title" data-en="SQA & Systems Quality" data-ar="حوكمة جودة البرمجيات">SQA & Systems Quality</h3>
+                    <p class="pillar-desc" data-en="Spearheading software quality assurance and automated verification pipelines at DevGiant. Eliminating defect regression through resilient Python Selenium suites and GitLab CI/CD." data-ar="قيادة ضمان جودة البرمجيات وأتمتة الاختبارات المتقدمة في ديف جاينت، وتحقيق أقصى استقرار برمجي من خلال بايثون سيلينيوم وتكامل CI/CD.">
+                        Spearheading software quality assurance and automated verification pipelines at DevGiant. Eliminating defect regression through resilient Python Selenium suites and GitLab CI/CD.
+                    </p>
+                    <span class="pillar-tag">#PythonAutomation #ZeroDefect</span>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="pillar-title" data-en="Intelligent Data Science" data-ar="البيانات والذكاء التحليلي">Intelligent Data Science</h3>
+                    <p class="pillar-desc" data-en="Leveraging machine learning models and big data analytics to extract actionable intelligence, predict institutional trends, and build automated decision-support dashboards." data-ar="توظيف نماذج التعلم الآلي وتحليلات البيانات الضخمة لاستخراج الرؤى الدقيقة وبناء لوحات تحكم متقدمة تدعم اتخاذ القرارات التنفيذية.">
+                        Leveraging machine learning models and big data analytics to extract actionable intelligence, predict institutional trends, and build automated decision-support dashboards.
+                    </p>
+                    <span class="pillar-tag">#PredictiveAI #PowerBI #SQL</span>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-icon-box">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="pillar-title" data-en="Academic Leadership" data-ar="القيادة الأكاديمية والتمكين">Academic Leadership</h3>
+                    <p class="pillar-desc" data-en="Over two decades of training military and civilian cadets, empowering educators with cutting-edge IT competencies, and aligning curriculum to international accreditation benchmarks." data-ar="أكثر من 20 عاماً في تأهيل الكوادر وتطوير قدرات المعلمين التقنية وربط المناهج التعليمية بأعلى معايير الاعتماد والتميز الدولية.">
+                        Over two decades of training military and civilian cadets, empowering educators with cutting-edge IT competencies, and aligning curriculum to international accreditation benchmarks.
+                    </p>
+                    <span class="pillar-tag">#ExecutiveGovernance #Mentorship</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Initiatives (Replaced Old Projects) -->
+    <section id="cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Proven Track Record" data-ar="المشاريع الاستراتيجية">Proven Track Record</span>
+                <h2 class="section-title" data-en="Flagship Strategic Initiatives" data-ar="المبادرات والمنظومات الرائدة">Flagship Strategic Initiatives</h2>
+                <p class="section-subtitle" data-en="Enterprise-grade platforms, automated testing frameworks, and high-impact digital ecosystems engineered for scale." data-ar="منظومات متطورة على مستوى المؤسسات، ومنصات اختبار مؤتمتة، وبنى تحتية رقمية مصممة لتحمل أقصى درجات الضغط.">
+                    Enterprise-grade platforms, automated testing frameworks, and high-impact digital ecosystems engineered for scale.
+                </p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="case-studies-filter">
+                <button class="filter-btn active" data-filter="all" data-en="All Flagships" data-ar="جميع المنظومات">All Flagships</button>
+                <button class="filter-btn" data-filter="edtech" data-en="EdTech & Portals" data-ar="التعليم الرقمي والبوابات">EdTech & Portals</button>
+                <button class="filter-btn" data-filter="sqa" data-en="SQA & Automation" data-ar="أتمتة الجودة والبرمجيات">SQA & Automation</button>
+                <button class="filter-btn" data-filter="data" data-en="Data Intelligence & AI" data-ar="ذكاء البيانات والـ AI">Data Intelligence & AI</button>
+            </div>
+
+            <div class="case-studies-grid">
+                <!-- Case 1: Sharp Academy Portal -->
+                <div class="case-card" data-category="edtech">
+                    <div class="case-header-bar">
+                        <span class="case-badge" data-en="Institutional EdTech Platform" data-ar="منظومة أكاديمية متكاملة">Institutional EdTech Platform</span>
+                        <span class="case-status"><i class="fa-solid fa-circle-check"></i> <span data-en="In Active Production" data-ar="قيد التشغيل الفعلي">In Active Production</span></span>
+                    </div>
+                    <div class="case-body">
+                        <h3 class="case-title" data-en="Sharp Academy Cloud-Native Learning Engine" data-ar="محرك التعلم السحابي المتطور لأكاديمية شارب">Sharp Academy Cloud-Native Learning Engine</h3>
+                        <p class="case-desc" data-en="Spearheaded the complete end-to-end architecture of Sharp Academy's digital ecosystem. Powered by Cloudflare Workers at the edge with Hono, D1 SQL, and automated assessment generation. Supports thousands of concurrent cadet sessions with zero cold-starts." data-ar="قيادة وتصميم المنظومة الرقمية الشاملة لأكاديمية شارب عبر تقنيات الحافة السحابية من كلاودفلير مع هونُو وقواعد بيانات D1، تدعم آلاف الجلسات المتزامنة للطلاب وبسرعة استجابة فائقة.">
+                            Spearheaded the complete end-to-end architecture of Sharp Academy's digital ecosystem. Powered by Cloudflare Workers at the edge with Hono, D1 SQL, and automated assessment generation. Supports thousands of concurrent cadet sessions with zero cold-starts.
+                        </p>
+
+                        <div class="case-impact-box">
+                            <div>
+                                <div class="impact-item-val">&lt;45ms</div>
+                                <div class="impact-item-lbl" data-en="Edge Latency" data-ar="زمن الاستجابة">Edge Latency</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">10,000+</div>
+                                <div class="impact-item-lbl" data-en="Assessments" data-ar="اختبارات منجزة">Assessments</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">100%</div>
+                                <div class="impact-item-lbl" data-en="Serverless" data-ar="سحابي بالكامل">Serverless</div>
+                            </div>
+                        </div>
+
+                        <div class="case-tags">
+                            <span class="tech-tag">Cloudflare Workers</span>
+                            <span class="tech-tag">Hono / TypeScript</span>
+                            <span class="tech-tag">Cloudflare D1 SQL</span>
+                            <span class="tech-tag">R2 Object Storage</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+
+                        <div class="case-footer">
+                            <a href="/" class="case-link-btn">
+                                <span data-en="View Live Academy Portal" data-ar="زيارة بوابة الأكاديمية">View Live Academy Portal</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Production System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: DevGiant QA Automation -->
+                <div class="case-card" data-category="sqa">
+                    <div class="case-header-bar">
+                        <span class="case-badge" data-en="Enterprise Automation Framework" data-ar="إطار أتمتة الجودة المؤسسي">Enterprise Automation Framework</span>
+                        <span class="case-status"><i class="fa-solid fa-circle-check"></i> <span data-en="Enterprise Deployment" data-ar="نظام تشغيلي معتمد">Enterprise Deployment</span></span>
+                    </div>
+                    <div class="case-body">
+                        <h3 class="case-title" data-en="DevGiant Enterprise QA & Regression Pipeline" data-ar="منظومة اختبارات الجودة والانحدار في ديف جاينت">DevGiant Enterprise QA & Regression Pipeline</h3>
+                        <p class="case-desc" data-en="Architected a resilient automated quality verification framework using Python Selenium, Page Object Models, and SQL data fixtures. Integrated into GitLab CI/CD pipelines to guarantee release readiness and eliminate defect escapes in mission-critical releases." data-ar="تصميم إطار عمل مؤتمت عالي الموثوقية لاختبارات الجودة باستخدام بايثون سيلينيوم وتكامله مع GitLab CI/CD لضمان الجاهزية التامة للبرمجيات ومنع تسرب العيوب للإنتاج.">
+                            Architected a resilient automated quality verification framework using Python Selenium, Page Object Models, and SQL data fixtures. Integrated into GitLab CI/CD pipelines to guarantee release readiness and eliminate defect escapes in mission-critical releases.
+                        </p>
+
+                        <div class="case-impact-box">
+                            <div>
+                                <div class="impact-item-val">-78%</div>
+                                <div class="impact-item-lbl" data-en="Regression Time" data-ar="تقليص وقت الفحص">Regression Time</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">99.4%</div>
+                                <div class="impact-item-lbl" data-en="Pass Accuracy" data-ar="دقة الاختبارات">Pass Accuracy</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">0</div>
+                                <div class="impact-item-lbl" data-en="Critical Escapes" data-ar="عيوب حرجة">Critical Escapes</div>
+                            </div>
+                        </div>
+
+                        <div class="case-tags">
+                            <span class="tech-tag">Python 3</span>
+                            <span class="tech-tag">Selenium WebDriver</span>
+                            <span class="tech-tag">GitLab CI/CD</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">PyTest</span>
+                        </div>
+
+                        <div class="case-footer">
+                            <span class="case-link-btn" style="cursor: default;">
+                                <span data-en="Enterprise Governance Framework" data-ar="معايير الحوكمة البرمجية">Enterprise Governance Framework</span>
+                                <i class="fa-solid fa-shield"></i>
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">DevGiant Global</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3: Predictive Analytics Engine -->
+                <div class="case-card" data-category="data">
+                    <div class="case-header-bar">
+                        <span class="case-badge" data-en="Machine Learning & BI" data-ar="التعلم الآلي وذكاء الأعمال">Machine Learning & BI</span>
+                        <span class="case-status"><i class="fa-solid fa-circle-check"></i> <span data-en="Applied Intelligence" data-ar="تطبيق تحليلي مباشر">Applied Intelligence</span></span>
+                    </div>
+                    <div class="case-body">
+                        <h3 class="case-title" data-en="Institutional Student Success & Predictive Forecasting" data-ar="النمذجة التنبؤية للأداء الأكاديمي والتحصيل">Institutional Student Success & Predictive Forecasting</h3>
+                        <p class="case-desc" data-en="Developed algorithmic predictive models utilizing Scikit-learn and Power BI to analyze multidimensional student test curves, identify early warning patterns in comprehension drops, and recommend individualized academic coaching interventions." data-ar="تطوير نماذج تنبؤية قائمة على خوارزميات التعلم الآلي وتحليل المسارات المعرفية للطلاب لرصد مؤشرات التعثر مبكراً وتقديم توصيات مخصصة للتدخل الأكاديمي السريع.">
+                            Developed algorithmic predictive models utilizing Scikit-learn and Power BI to analyze multidimensional student test curves, identify early warning patterns in comprehension drops, and recommend individualized academic coaching interventions.
+                        </p>
+
+                        <div class="case-impact-box">
+                            <div>
+                                <div class="impact-item-val">+24%</div>
+                                <div class="impact-item-lbl" data-en="Retention Gain" data-ar="تحسن الاستبقاء">Retention Gain</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">92.6%</div>
+                                <div class="impact-item-lbl" data-en="Forecast Metric" data-ar="دقة التنبؤ">Forecast Metric</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">Real-time</div>
+                                <div class="impact-item-lbl" data-en="Dashboards" data-ar="لوحات تفاعلية">Dashboards</div>
+                            </div>
+                        </div>
+
+                        <div class="case-tags">
+                            <span class="tech-tag">Python (Scikit-Learn)</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Pandas & NumPy</span>
+                            <span class="tech-tag">Statistical Regression</span>
+                            <span class="tech-tag">ETL Pipelines</span>
+                        </div>
+
+                        <div class="case-footer">
+                            <span class="case-link-btn" style="cursor: default;">
+                                <span data-en="Predictive Academic Analytics" data-ar="التحليل التنبؤي الأكاديمي">Predictive Academic Analytics</span>
+                                <i class="fa-solid fa-brain"></i>
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Data Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4: High Availability Infrastructure -->
+                <div class="case-card" data-category="edtech">
+                    <div class="case-header-bar">
+                        <span class="case-badge" data-en="Systems & Infrastructure" data-ar="البنية التحتية والشبكات">Systems & Infrastructure</span>
+                        <span class="case-status"><i class="fa-solid fa-circle-check"></i> <span data-en="Zero-Loss Record" data-ar="سجل خالي من الانقطاع">Zero-Loss Record</span></span>
+                    </div>
+                    <div class="case-body">
+                        <h3 class="case-title" data-en="Mission-Critical Enterprise LAN & Database Governance" data-ar="إدارة قواعد البيانات وشبكات المؤسسات الحساسة">Mission-Critical Enterprise LAN & Database Governance</h3>
+                        <p class="case-desc" data-en="Over two decades of architecting secure multi-tiered database administration systems, disaster recovery automated backups, robust institutional LAN/WAN topologies, and customized Crystal Reports business reporting engines." data-ar="أكثر من عقدين في قيادة وحماية قواعد البيانات الحساسة للمؤسسات، وتطبيق بروتوكولات التعافي من الكوارث، وإدارة الشبكات المؤسسية بكفاءة استثنائية دون أي فقد للبيانات.">
+                            Over two decades of architecting secure multi-tiered database administration systems, disaster recovery automated backups, robust institutional LAN/WAN topologies, and customized Crystal Reports business reporting engines.
+                        </p>
+
+                        <div class="case-impact-box">
+                            <div>
+                                <div class="impact-item-val">20+ Yrs</div>
+                                <div class="impact-item-lbl" data-en="Zero Loss" data-ar="سلامة تامة للبيانات">Zero Loss</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">Automated</div>
+                                <div class="impact-item-lbl" data-en="Failover" data-ar="نسخ احتياطي فوري">Failover</div>
+                            </div>
+                            <div>
+                                <div class="impact-item-val">Sub-second</div>
+                                <div class="impact-item-lbl" data-en="Reporting" data-ar="سرعة التقارير">Reporting</div>
+                            </div>
+                        </div>
+
+                        <div class="case-tags">
+                            <span class="tech-tag">Microsoft SQL Server</span>
+                            <span class="tech-tag">Database Administration</span>
+                            <span class="tech-tag">Enterprise LAN/WAN</span>
+                            <span class="tech-tag">Disaster Recovery</span>
+                            <span class="tech-tag">Crystal Reports</span>
+                        </div>
+
+                        <div class="case-footer">
+                            <span class="case-link-btn" style="cursor: default;">
+                                <span data-en="High-Security Systems" data-ar="أنظمة فائقة الأمان">High-Security Systems</span>
+                                <i class="fa-solid fa-server"></i>
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Defence & Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Capabilities Matrix (Replaced Old Skills) -->
+    <section id="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Core Competencies" data-ar="مصفوفة الكفاءات">Core Competencies</span>
+                <h2 class="section-title" data-en="Strategic Capabilities & Technology Stack" data-ar="القدرات الاستراتيجية والمنظومة التقنية">Strategic Capabilities & Technology Stack</h2>
+                <p class="section-subtitle" data-en="A multidisciplinary synthesis of executive governance, edge cloud software, and rigorous data engineering." data-ar="مزيج متكامل من القيادة التنفيذية، وهندسة البرمجيات السحابية، وعلوم البيانات المتقدمة.">
+                    A multidisciplinary synthesis of executive governance, edge cloud software, and rigorous data engineering.
+                </p>
+            </div>
+
+            <div class="capabilities-grid">
+                <!-- Column 1: Executive & Academic -->
+                <div class="capability-card">
+                    <div class="cap-header">
+                        <div class="cap-icon">
+                            <i class="fa-solid fa-chess"></i>
+                        </div>
+                        <div>
+                            <h3 class="cap-title" data-en="Executive Governance" data-ar="القيادة والحوكمة المؤسسية">Executive Governance</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Strategy & Academic Vision</span>
+                        </div>
+                    </div>
+
+                    <ul class="cap-skills-list">
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="EdTech Strategy & Vision" data-ar="استراتيجية التعليم الرقمي">EdTech Strategy & Vision</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 98%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Institutional Curriculum Design" data-ar="تصميم المناهج المتقدمة">Institutional Curriculum Design</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 95%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Faculty Leadership & Mentorship" data-ar="تمكين وتدريب الكوادر">Faculty Leadership & Mentorship</span>
+                                <span>96%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 96%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Cross-Functional Team Governance" data-ar="إدارة الفرق المتعددة">Cross-Functional Team Governance</span>
+                                <span>94%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 94%;"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Software & Quality Assurance -->
+                <div class="capability-card">
+                    <div class="cap-header">
+                        <div class="cap-icon">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div>
+                            <h3 class="cap-title" data-en="SQA & Cloud Systems" data-ar="جودة البرمجيات والسحابة">SQA & Cloud Systems</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Edge, CI/CD & Assurance</span>
+                        </div>
+                    </div>
+
+                    <ul class="cap-skills-list">
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Python Selenium Automation" data-ar="أتمتة بايثون وسيلينيوم">Python Selenium Automation</span>
+                                <span>96%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 96%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Cloudflare Edge & Serverless" data-ar="تقنيات الحافة السحابية">Cloudflare Edge & Serverless</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 92%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="TypeScript & Modern Web" data-ar="تايب سكريبت والويب المعاصر">TypeScript & Modern Web</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 90%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="CI/CD Pipelines & DevOps" data-ar="أتمتة النشر والتكامل CI/CD">CI/CD Pipelines & DevOps</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 92%;"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Data & Applied AI -->
+                <div class="capability-card">
+                    <div class="cap-header">
+                        <div class="cap-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div>
+                            <h3 class="cap-title" data-en="Data Science & ML" data-ar="علوم البيانات والـ AI">Data Science & ML</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Predictive Analytics & SQL</span>
+                        </div>
+                    </div>
+
+                    <ul class="cap-skills-list">
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="SQL Engineering & Warehousing" data-ar="هندسة قواعد بيانات SQL">SQL Engineering & Warehousing</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 98%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Machine Learning (Scikit-Learn)" data-ar="نماذج التعلم الآلي">Machine Learning (Scikit-Learn)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 90%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Power BI & Data Storytelling" data-ar="لوحات تحكم Power BI">Power BI & Data Storytelling</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 95%;"></div></div>
+                        </li>
+                        <li class="cap-skill-item">
+                            <div class="cap-skill-top">
+                                <span data-en="Big Data Analytics & PySpark" data-ar="معالجة البيانات الضخمة">Big Data Analytics & PySpark</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="cap-meter"><div class="cap-meter-fill" style="width: 88%;"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Career Trajectory (Timeline) -->
+    <section id="trajectory">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Executive Journey" data-ar="المسار القيادي">Executive Journey</span>
+                <h2 class="section-title" data-en="Career Trajectory & Milestones" data-ar="محطات المسيرة والخبرة المهنية">Career Trajectory & Milestones</h2>
+                <p class="section-subtitle" data-en="Over 20 years of continuous technological impact, from enterprise systems to institutional directorship." data-ar="أكثر من عقدين من العطاء المستمر والتأثير النوعي في القطاعات التعليمية والتقنية الحساسة.">
+                    Over 20 years of continuous technological impact, from enterprise systems to institutional directorship.
+                </p>
+            </div>
+
+            <div class="trajectory-timeline">
+                <!-- Milestone 1: Sharp Academy -->
+                <div class="trajectory-item">
+                    <div class="trajectory-node"></div>
+                    <div class="trajectory-card">
+                        <span class="trajectory-period">2024 — Present</span>
+                        <h3 class="trajectory-role" data-en="Executive Director & Academic Head" data-ar="المدير التنفيذي ورئيس الهيئة الأكاديمية">Executive Director & Academic Head</h3>
+                        <div class="trajectory-org">Sharp Academy</div>
+                        <p class="trajectory-desc" data-en="Spearheading institutional vision, academic curriculum engineering, cadet entrance examination training, and enterprise digital operations. Architected the cloud-native portal delivering high-concurrency online mock testing, student analytics, and faculty automation." data-ar="قيادة الرؤية الاستراتيجية لأكاديمية شارب، وتطوير المناهج الأكاديمية وبرامج تدريب الكليات العسكرية، مع هندسة المنظومة الرقمية السحابية الشاملة للأكاديمية.">
+                            Spearheading institutional vision, academic curriculum engineering, cadet entrance examination training, and enterprise digital operations. Architected the cloud-native portal delivering high-concurrency online mock testing, student analytics, and faculty automation.
+                        </p>
+                        <div class="trajectory-chips">
+                            <span class="trajectory-chip">Institutional Vision</span>
+                            <span class="trajectory-chip">Cloudflare Edge LMS</span>
+                            <span class="trajectory-chip">Cadet Mentorship</span>
+                            <span class="trajectory-chip">Academic Strategy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestone 2: DevGiant -->
+                <div class="trajectory-item">
+                    <div class="trajectory-node"></div>
+                    <div class="trajectory-card">
+                        <span class="trajectory-period">2025 — Present</span>
+                        <h3 class="trajectory-role" data-en="Head of Software Quality Assurance & Data Engineering" data-ar="رئيس قسم ضمان جودة البرمجيات وهندسة البيانات">Head of Software Quality Assurance & Data Engineering</h3>
+                        <div class="trajectory-org">DevGiant</div>
+                        <p class="trajectory-desc" data-en="Architecting automated testing frameworks (Python Selenium), designing defect velocity intelligence dashboards, and collaborating cross-functionally with global development teams to enforce zero-defect release quality in production environments." data-ar="هندسة أطر عمل أتمتة الاختبارات المتقدمة (Python Selenium)، وتصميم لوحات تتبع جودة الإطلاقات والتنسيق مع فرق التطوير العالمية لتحقيق أعلى معايير الجودة.">
+                            Architecting automated testing frameworks (Python Selenium), designing defect velocity intelligence dashboards, and collaborating cross-functionally with global development teams to enforce zero-defect release quality in production environments.
+                        </p>
+                        <div class="trajectory-chips">
+                            <span class="trajectory-chip">Python Automation</span>
+                            <span class="trajectory-chip">Selenium WebDriver</span>
+                            <span class="trajectory-chip">GitLab CI/CD</span>
+                            <span class="trajectory-chip">SQL Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestone 3: Institutional Programs -->
+                <div class="trajectory-item">
+                    <div class="trajectory-node"></div>
+                    <div class="trajectory-card">
+                        <span class="trajectory-period">2003 — 2024</span>
+                        <h3 class="trajectory-role" data-en="Director of Educational Technology & Instructional Administration" data-ar="مدير تقنيات التعليم والإدارة الأكاديمية">Director of Educational Technology & Instructional Administration</h3>
+                        <div class="trajectory-org">Institutional & Defence Programs</div>
+                        <p class="trajectory-desc" data-en="Championed two decades of data-driven instructional evaluations, advanced IT and data training workshops, curriculum innovation, and administrative technology modernizations across large-scale educational programs." data-ar="قيادة التقييمات الأكاديمية القائمة على البيانات على مدار عقدين، وتصميم وتنفيذ ورش العمل التقنية وتطوير المناهج التعليمية وتحديث البنية التقنية للمؤسسات.">
+                            Championed two decades of data-driven instructional evaluations, advanced IT and data training workshops, curriculum innovation, and administrative technology modernizations across large-scale educational programs.
+                        </p>
+                        <div class="trajectory-chips">
+                            <span class="trajectory-chip">20+ Years Leadership</span>
+                            <span class="trajectory-chip">Pedagogical Governance</span>
+                            <span class="trajectory-chip">IT Capacity Building</span>
+                            <span class="trajectory-chip">High-Stakes Evaluations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestone 4: SAGA Sports -->
+                <div class="trajectory-item">
+                    <div class="trajectory-node"></div>
+                    <div class="trajectory-card">
+                        <span class="trajectory-period">2000 — 2003</span>
+                        <h3 class="trajectory-role" data-en="Systems & Database Administrator" data-ar="مسؤول النظم وقواعد البيانات">Systems & Database Administrator</h3>
+                        <div class="trajectory-org">SAGA Sports (Pvt) Ltd</div>
+                        <p class="trajectory-desc" data-en="Managed campus-wide enterprise LAN and SQL Database Servers. Designed custom management reporting systems in Crystal Reports, performed rigorous backup/recovery protocols, and trained hundreds of end-users." data-ar="إدارة البنية التحتية لشبكات LAN وخوادم قواعد بيانات SQL وتصميم التقارير الإدارية المتقدمة والإشراف على أمن واستقرار البيانات المؤسسية.">
+                            Managed campus-wide enterprise LAN and SQL Database Servers. Designed custom management reporting systems in Crystal Reports, performed rigorous backup/recovery protocols, and trained hundreds of end-users.
+                        </p>
+                        <div class="trajectory-chips">
+                            <span class="trajectory-chip">SQL Server DBA</span>
+                            <span class="trajectory-chip">Enterprise LAN</span>
+                            <span class="trajectory-chip">Crystal Reports</span>
+                            <span class="trajectory-chip">User Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Global Credentials & Accreditations (Replaced Old Certificate Grid) -->
+    <section id="credentials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Global Standing" data-ar="الاعتمادات الموثقة">Global Standing</span>
+                <h2 class="section-title" data-en="Accreditations & International Credentials" data-ar="الشهادات والاعتمادات العالمية">Accreditations & International Credentials</h2>
+                <p class="section-subtitle" data-en="Curated professional specializations and academic credentials from premier global universities." data-ar="تخصصات مهنية معتمدة من أرقى المؤسسات والجامعات العالمية الرائدة في التقنية والذكاء الاصطناعي.">
+                    Curated professional specializations and academic credentials from premier global universities.
+                </p>
+            </div>
+
+            <div class="credentials-grid">
+                <!-- Credential 1 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/WQU-AI Lab.png" alt="WorldQuant University">
+                    </div>
+                    <span class="cred-issuer">WorldQuant University</span>
+                    <h3 class="cred-name" data-en="Applied AI Lab: Deep Learning & Vision" data-ar="مختبر الذكاء الاصطناعي التطبيقي والرؤية الحاسوبية">Applied AI Lab: Deep Learning & Vision</h3>
+                    <a href="https://www.credly.com/badges/aa09befb-2a98-49cc-ab32-a3f95d9292e8" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Credly" data-ar="تحقق من الشهادة">Verify Credly</span>
+                    </a>
+                </div>
+
+                <!-- Credential 2 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/WQU-DS Lab.png" alt="WorldQuant University">
+                    </div>
+                    <span class="cred-issuer">WorldQuant University</span>
+                    <h3 class="cred-name" data-en="Applied Data Science Specialization" data-ar="التخصص التطبيقي في علوم البيانات">Applied Data Science Specialization</h3>
+                    <a href="https://www.credly.com/badges/1997c3d7-b580-4609-810e-dceddadc649c/public_url" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Credly" data-ar="تحقق من الشهادة">Verify Credly</span>
+                    </a>
+                </div>
+
+                <!-- Credential 3 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/DeeplearningAI.png" alt="DeepLearning.AI">
+                    </div>
+                    <span class="cred-issuer">DeepLearning.AI</span>
+                    <h3 class="cred-name" data-en="Machine Learning Specialization" data-ar="تخصص التعلم الآلي المتقدم">Machine Learning Specialization</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/UBXPFT5EVAR4" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+
+                <!-- Credential 4 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/UC San Diego logo.jpg" alt="UC San Diego">
+                    </div>
+                    <span class="cred-issuer">UC San Diego</span>
+                    <h3 class="cred-name" data-en="Big Data Modeling & Management" data-ar="نمذجة وإدارة نظم البيانات الضخمة">Big Data Modeling & Management</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/2ZXMJ8TP9TAG" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+
+                <!-- Credential 5 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/cloudera1.jpg" alt="Cloudera">
+                    </div>
+                    <span class="cred-issuer">Cloudera</span>
+                    <h3 class="cred-name" data-en="Modern Big Data Analysis with SQL" data-ar="تحليل البيانات الضخمة الحديثة عبر SQL">Modern Big Data Analysis with SQL</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/JFJ4HVY23BD5" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+
+                <!-- Credential 6 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/stanford.jpg" alt="Stanford University">
+                    </div>
+                    <span class="cred-issuer">Stanford Online</span>
+                    <h3 class="cred-name" data-en="Machine Learning & Algorithmic Foundations" data-ar="أسس خوارزميات التعلم الآلي">Machine Learning & Algorithmic Foundations</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/SKEELAFKENHT" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+
+                <!-- Credential 7 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/ibm.png" alt="IBM">
+                    </div>
+                    <span class="cred-issuer">IBM</span>
+                    <h3 class="cred-name" data-en="Python for Data Science, AI & Dev" data-ar="بايثون لعلوم البيانات والذكاء الاصطناعي">Python for Data Science, AI & Dev</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/PW3KN8H46BE9" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+
+                <!-- Credential 8 -->
+                <div class="cred-card">
+                    <div class="cred-logo-wrapper">
+                        <img src="./images/microsoft_logo.jpg" alt="Microsoft">
+                    </div>
+                    <span class="cred-issuer">Microsoft</span>
+                    <h3 class="cred-name" data-en="Advanced Analytical Data Modeling" data-ar="النمذجة التحليلية المتقدمة للبيانات">Advanced Analytical Data Modeling</h3>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/DMQ3ACLRPMGB" target="_blank" class="cred-badge-btn">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span data-en="Verify Coursera" data-ar="تحقق من كورسيرة">Verify Coursera</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Leadership Philosophy Quote Banner -->
+            <div style="margin-top: 4rem;">
+                <div class="quote-banner">
+                    <p class="quote-text" data-en="“True leadership in modern education and technology lies at the intersection of unwavering academic discipline, resilient software architecture, and the transformative power of intelligent data.”" data-ar="«إن القيادة الحقيقية في التعليم والتكنولوجيا المعاصرة تنبثق من نقطة الالتقاء بين الانضباط الأكاديمي الصارم، وهندسة البرمجيات فائقة الموثوقية، وقوة البيانات الذكية.»">
+                        “True leadership in modern education and technology lies at the intersection of unwavering academic discipline, resilient software architecture, and the transformative power of intelligent data.”
+                    </p>
+                    <div class="quote-author">
+                        <img src="./images/profile.png" alt="Muhammad Asif" class="author-thumb">
+                        <div class="author-info">
+                            <h4>Muhammad Asif</h4>
+                            <p data-en="Executive Director, Sharp Academy & Tech Strategist" data-ar="المدير التنفيذي لأكاديمية شارب والمستشار التقني">Executive Director, Sharp Academy & Tech Strategist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Advisory & Direct Consultation (Contact) -->
+    <section id="advisory">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-en="Engagement" data-ar="التواصل والتعاون">Engagement</span>
+                <h2 class="section-title" data-en="Strategic Advisory & Consultation" data-ar="الاستشارات الاستراتيجية والشراكات">Strategic Advisory & Consultation</h2>
+                <p class="section-subtitle" data-en="Available for institutional advisory, EdTech digital transformation, and executive tech keynotes." data-ar="متاح للاستشارات الأكاديمية والتحول الرقمي المؤسسي والشراكات التقنية الاستراتيجية.">
+                    Available for institutional advisory, EdTech digital transformation, and executive tech keynotes.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Details -->
+                <div class="contact-info-card">
+                    <h3 class="contact-info-title" data-en="Let's Build the Future Together" data-ar="لنبنِ مستقبل التعليم والتقنية معاً">Let's Build the Future Together</h3>
+                    <p class="contact-info-desc" data-en="Whether you are modernizing an academic institution, establishing high-reliability software testing pipelines, or seeking high-level technology governance, let us connect." data-ar="سواء كنت تسعى لتحديث منظومة تعليمية، أو تأسيس أطر أتمتة اختبارات البرمجيات، أو الاستفادة من خبرة قيادية استراتيجية، يسعدني التواصل المباشر معك.">
+                        Whether you are modernizing an academic institution, establishing high-reliability software testing pipelines, or seeking high-level technology governance, let us connect.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-item">
+                            <div class="contact-icon-bubble">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-detail">
+                                <h5 data-en="Direct Email" data-ar="البريد الإلكتروني المباشر">Direct Email</h5>
+                                <a href="mailto:asifslk2024@gmail.com">asifslk2024@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item">
+                            <div class="contact-icon-bubble">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-method-detail">
+                                <h5 data-en="Telephone & WhatsApp" data-ar="الهاتف والواتساب">Telephone & WhatsApp</h5>
+                                <a href="https://wa.me/923474195952" target="_blank">+92 347 4195952</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method-item">
+                            <div class="contact-icon-bubble">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-method-detail">
+                                <h5 data-en="Executive Office" data-ar="المقر التنفيذي">Executive Office</h5>
+                                <p data-en="Lahore & Sialkot, Pakistan" data-ar="لاهور وسيالكوت، باكستان">Lahore & Sialkot, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-pill-row">
+                        <a href="https://www.linkedin.com/in/muhammad-asif-96927a1b8/" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/MuhammadAsif038" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.kaggle.com/muhammadasif038" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-kaggle"></i> Kaggle
+                        </a>
+                        <a href="https://wa.me/923474195952" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Consultation Form -->
+                <div class="advisory-form-wrapper">
+                    <form id="consultationForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" data-en="Your Full Name" data-ar="الاسم الكامل">Your Full Name</label>
+                                <input type="text" class="form-input" id="senderName" required placeholder="e.g. Dr. Alexander Vance" data-en-placeholder="e.g. Dr. Alexander Vance" data-ar-placeholder="مثال: د. أحمد المحمدي">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" data-en="Corporate / Institutional Email" data-ar="البريد المؤسسي">Corporate / Institutional Email</label>
+                                <input type="email" class="form-input" id="senderEmail" required placeholder="name@institution.org" data-en-placeholder="name@institution.org" data-ar-placeholder="name@institution.org">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" data-en="Consultation Domain" data-ar="مجال الاستشارة المطلوب">Consultation Domain</label>
+                                <select class="form-select" id="consultationDomain">
+                                    <option value="EdTech Digital Transformation" data-en="EdTech Digital Transformation" data-ar="التحول الرقمي التعليمي">EdTech Digital Transformation</option>
+                                    <option value="Enterprise SQA & Automation" data-en="Enterprise SQA & Automation" data-ar="حوكمة جودة البرمجيات والأتمتة">Enterprise SQA & Automation</option>
+                                    <option value="Academic Governance & Curriculum" data-en="Academic Governance & Curriculum" data-ar="الحوكمة الأكاديمية والمناهج">Academic Governance & Curriculum</option>
+                                    <option value="Predictive AI & Data Science" data-en="Predictive AI & Data Science" data-ar="الذكاء الاصطناعي وعلوم البيانات">Predictive AI & Data Science</option>
+                                    <option value="Keynote Speaking & Training" data-en="Keynote Speaking & Training" data-ar="المحاضرات وورش العمل">Keynote Speaking & Training</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" data-en="Phone / WhatsApp (Optional)" data-ar="الهاتف / واتساب (اختياري)">Phone / WhatsApp (Optional)</label>
+                                <input type="tel" class="form-input" id="senderPhone" placeholder="+92 ...">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="form-label" data-en="Initiative Overview / Brief" data-ar="تفاصيل المبادرة أو الاستشارة">Initiative Overview / Brief</label>
+                            <textarea class="form-textarea" id="senderMessage" required placeholder="Describe your institutional objectives, project scope, or advisory inquiry..." data-en-placeholder="Describe your institutional objectives, project scope, or advisory inquiry..." data-ar-placeholder="يرجى توضيح أهداف المبادرة أو موضوع الاستشارة المطلوب..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-en="Transmit Strategic Inquiry" data-ar="إرسال الطلب الاستشاري">Transmit Strategic Inquiry</span>
+                        </button>
+
+                        <div class="form-status-alert success" id="formStatusAlert">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-en="Thank you. Your strategic inquiry has been received. You will receive an executive response promptly." data-ar="شكراً لتواصلك. تم استلام رسالتك وسيتم الرد على طلبك الاستشاري في أقرب وقت.">Thank you. Your strategic inquiry has been received. You will receive an executive response promptly.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Muhammad <span class="text-gradient">Asif</span></h3>
+                    <p data-en="Executive Director, Sharp Academy • Senior SQA & Data Engineering Strategist, DevGiant" data-ar="المدير التنفيذي لأكاديمية شارب • رئيس جودة البرمجيات والبيانات بديف جاينت">
+                        Executive Director, Sharp Academy • Senior SQA & Data Engineering Strategist, DevGiant
+                    </p>
+                </div>
+
+                <ul class="footer-nav">
+                    <li><a href="#about" class="nav-link" data-en="Profile" data-ar="الملف">Profile</a></li>
+                    <li><a href="#cases" class="nav-link" data-en="Initiatives" data-ar="المشاريع">Initiatives</a></li>
+                    <li><a href="#capabilities" class="nav-link" data-en="Capabilities" data-ar="القدرات">Capabilities</a></li>
+                    <li><a href="#credentials" class="nav-link" data-en="Accreditations" data-ar="الاعتمادات">Accreditations</a></li>
+                    <li><a href="/" class="nav-link" style="color: var(--accent-secondary);" data-en="Sharp Academy Portal" data-ar="بوابة أكاديمية شارب">Sharp Academy Portal</a></li>
+                </ul>
+
+                <button class="back-to-top" id="backToTopBtn" title="Back to Top" aria-label="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> Muhammad Asif. <span data-en="All Strategic Rights Reserved." data-ar="جميع الحقوق الاستراتيجية محفوظة.">All Strategic Rights Reserved.</span></p>
+                <div style="display: flex; gap: 1.5rem; align-items: center;">
+                    <a href="resume.pdf" target="_blank" style="color: var(--text-muted); font-size: 0.85rem;" data-en="Download Dossier" data-ar="تحميل السيرة الذاتية">Download Dossier</a>
+                    <span>•</span>
+                    <a href="https://sharpacademy.pk" target="_blank" style="color: var(--accent-primary); font-weight: 700; font-size: 0.85rem;">sharpacademy.pk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic & State Management -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update Current Year
+            const yearElem = document.getElementById('currentYear');
+            if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+            // 1. Theme Management (Obsidian Dark vs Executive Light)
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const htmlElement = document.documentElement;
+
+            const savedTheme = localStorage.getItem('asif_portfolio_theme') || 'dark';
+            applyTheme(savedTheme);
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(newTheme);
+            });
+
+            function applyTheme(theme) {
+                htmlElement.setAttribute('data-theme', theme);
+                localStorage.setItem('asif_portfolio_theme', theme);
+                if (theme === 'dark') {
+                    themeIcon.className = 'fa-solid fa-sun';
+                } else {
+                    themeIcon.className = 'fa-solid fa-moon';
+                }
+            }
+
+            // 2. Language Switcher (EN / AR) with smooth RTL
+            const langToggle = document.getElementById('langToggle');
+            const langText = document.getElementById('langText');
+            let currentLang = localStorage.getItem('asif_portfolio_lang') || 'en';
+            applyLanguage(currentLang);
+
+            langToggle.addEventListener('click', () => {
+                currentLang = currentLang === 'en' ? 'ar' : 'en';
+                applyLanguage(currentLang);
+            });
+
+            function applyLanguage(lang) {
+                localStorage.setItem('asif_portfolio_lang', lang);
+                htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+                htmlElement.setAttribute('lang', lang);
+                langText.textContent = lang === 'en' ? 'AR' : 'EN';
+
+                // Update all elements with data-en / data-ar
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    const translation = el.getAttribute(`data-${lang}`);
+                    if (translation) {
+                        el.textContent = translation;
+                    }
+                });
+
+                // Update placeholders
+                document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+                    const placeholder = el.getAttribute(`data-${lang}-placeholder`);
+                    if (placeholder) {
+                        el.setAttribute('placeholder', placeholder);
+                    }
+                });
+            }
+
+            // 3. Header Scroll Effect
+            const header = document.getElementById('siteHeader');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // 4. Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const isOpen = navMenu.classList.contains('active');
+                mobileMenuBtn.innerHTML = isOpen 
+                    ? '<i class="fa-solid fa-xmark"></i>' 
+                    : '<i class="fa-solid fa-bars-staggered"></i>';
+            });
+
+            // Close mobile menu on link click
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+                });
+            });
+
+            // 5. Back to Top Button
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // 6. Case Studies Filter
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const caseCards = document.querySelectorAll('.case-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+                    caseCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            card.style.display = 'flex';
+                            card.style.opacity = '1';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 7. Interactive Consultation Form Submission
+            const form = document.getElementById('consultationForm');
+            const formStatusAlert = document.getElementById('formStatusAlert');
+
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('senderName').value;
+                    const email = document.getElementById('senderEmail').value;
+                    const domain = document.getElementById('consultationDomain').value;
+                    const message = document.getElementById('senderMessage').value;
+
+                    // Display feedback alert
+                    formStatusAlert.style.display = 'flex';
+                    formStatusAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                    // Construct mailto backup trigger
+                    const mailtoUrl = `mailto:asifslk2024@gmail.com?subject=${encodeURIComponent(`Strategic Inquiry: ${domain} (${name})`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nDomain: ${domain}\n\nMessage:\n${message}`)}`;
+                    
+                    setTimeout(() => {
+                        window.location.href = mailtoUrl;
+                        form.reset();
+                    }, 1200);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

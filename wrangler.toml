@@ -1,0 +1,11 @@
+name = "sharp-academy-root"
+account_id = "5c2cc3256370248706dbcde865e3cb6d"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sharp-db"
+database_id = "6aa14e2c-9ad6-48de-ba39-ce28176b77ee"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "sharp-materials"

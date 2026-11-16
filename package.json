@@ -1,0 +1,16 @@
+{
+  "name": "sharp-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sharp Academy Edge Monorepo (Portal, LMS, Exams & Admin)",
+  "scripts": {
+    "setup:local": "npm --prefix portal install && npm --prefix admin install && npm run db:local:migrate && npm run db:local:seed",
+    "dev:admin": "npm --prefix admin run dev",
+    "dev:portal": "npm --prefix portal run dev",
+    "db:local:migrate": "npx wrangler d1 execute sharp-db --config=./portal/wrangler.toml --local --persist-to=./.wrangler/state --file=./portal/db/schema.sql --yes",
+    "db:local:seed": "npx wrangler d1 execute sharp-db --config=./portal/wrangler.toml --local --persist-to=./.wrangler/state --file=./portal/db/seed.sql --yes",
+    "db:remote:migrate": "npx wrangler d1 execute sharp-db --remote --file=./portal/db/schema.sql --yes",
+    "db:remote:seed": "npx wrangler d1 execute sharp-db --remote --file=./portal/db/seed.sql --yes",
+    "build:css": "npm --prefix portal run build:css"
+  }
+}

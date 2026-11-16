@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.log
+
+# Next.js / Build Outputs
+.next/
+*/.next/
+out/
+dist/
+build/
+
+# Cloudflare Wrangler & D1 Local State
+.wrangler/
+*/.wrangler/
+.mf/
+
+# Environment Variables & Secrets
+.env
+.env*.local
+!.env.example
+
+# Local Database Files
+*.sqlite
+*.sqlite3
+*.db
+local.sqlite
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Nested external repository
+asifportfolio.github.io/
